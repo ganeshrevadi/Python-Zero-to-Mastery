@@ -1,5 +1,8 @@
 from functools import reduce
 
+lambda param: action(param)
+
+
 my_list = [1,2,3]
 ur_list = [10,20,30]
 their = (1000,2000,3000)
@@ -25,4 +28,8 @@ print(my_list)
 
 #Reduce
 print(reduce(accumulator, my_list, 0))
+print(my_list)
+
+#Lambda
+print(list(map(lambda item: item * 2,my_list)))
 print(my_list)
