@@ -1,9 +1,5 @@
-import utility
-from Shopping.shopping import buy
-from utility import multiply
-
-if __name__ == '__main__':
-    print(multiply(5, 6))
-    print(buy('apple'))
-
-print(__name__)
+def do_stuff(num):
+    try:
+        return int(num) + 5
+    except ValueError as err:
+        return err    
