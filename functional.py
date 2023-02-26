@@ -33,3 +33,4 @@ print(my_list)
 #Lambda
 print(list(map(lambda item: item * 2,my_list)))
 print(my_list)
+ 
