@@ -2,10 +2,12 @@ from flask import Flask ,render_template
 app = Flask(__name__)
 print(__name__)
 
-@app.route('/<username>')
-def hello_world(username = None):
-    return render_template('about.html', name = username)
+@app.route('/')
+def ny_home():
+    return render_template('index.html')
 
-@app.route('/blog')
-def blog():
-    return "This is my blog!"
+@app.route('/<string:page_name>')
+def html_page(page_name):
+    return render_template(page_name)
+
+    
